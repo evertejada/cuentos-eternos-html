@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cuentos Eternos</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Inter&display=swap" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuentos Eternos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
 
-  <body>
-    <!-- HEADER -->
-    <header class="header">
-      <div class="logo">
-        <img src="assets/logo.png" alt="Logo Cuentos Eternos" />
-        <span class="brand">CuentosEternos.com</span>
+  <!-- ENCABEZADO -->
+  <header>
+    <div class="logo">
+      <img src="nube.png" alt="Logo" width="50" />
+      <h1>Cuentos Eternos</h1>
+    </div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#oferta">Oferta</a>
+    </nav>
+  </header>
+
+  <!-- HERO PRINCIPAL -->
+  <section class="hero">
+    <h1>Convierte recuerdos en <span class="destacado">cuentos mágicos</span></h1>
+    <p>Crea historias personalizadas con ilustraciones únicas y audio narrado que serán tesoros para toda la vida.</p>
+    <div class="botones">
+      <a href="#formulario" class="btn-principal">Crear mi cuento ahora</a>
+      <a href="#tienda" class="btn-secundario">Explorar tienda</a>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CARICATURA MÁGICA -->
+  <section class="oferta" id="oferta">
+    <div class="imagen">
+      <img src="assets/caricatura-magica.png" alt="Caricatura mágica" />
+    </div>
+    <div class="contenido">
+      <span class="etiqueta">Oferta Especial</span>
+      <h2>Caricatura mágica personalizada</h2>
+      <p>Convierte a tu pequeño en el protagonista de un mundo de fantasía con nuestra caricatura mágica. Creada con inteligencia artificial y perfeccionada por nuestros artistas.</p>
+      <div class="precio">
+        <span class="actual">$1</span>
+        <span class="antes">$5.99</span>
+        <span class="descuento">83% descuento</span>
       </div>
-      <nav class="menu">
-        <a href="#">Inicio</a>
-        <a href="#">Tienda</a>
-        <a href="#">Crear Cuento</a>
-        <a href="#">Biblioteca</a>
-      </nav>
-      <div class="controls">
-        <button id="toggleDarkMode">🌙</button>
-        <select id="lang">
-          <option value="es">ES</option>
-          <option value="en">EN</option>
-        </select>
-        <button class="cta">Mi Cuenta</button>
-      </div>
-    </header>
+      <ul>
+        <li>✔ Entrega en 5 minutos</li>
+        <li>✔ Formato digital de alta resolución</li>
+        <li>✔ Personalización completa</li>
+      </ul>
+      <a href="#formulario" class="btn-principal">Crear caricatura mágica por $1</a>
+    </div>
+  </section>
 
-    <!-- NUBE ANIMADA -->
-    <img src="assets/nube.png" alt="Nube mágica" class="nube" />
-
-    <!-- CONTENIDO PRINCIPAL -->
-    <main class="hero">
-      <h1>Convierte recuerdos en<br /><span>cuentos mágicos</span></h1>
-      <p>Crea historias personalizadas con ilustraciones únicas y audio narrado que serán tesoros para toda la vida.</p>
-      <div class="botones">
-        <a href="#" class="btn coral">Crear mi cuento ahora</a>
-        <a href="#" class="btn morado">Explorar tienda</a>
-      </div>
-      <div class="scroll-down">↓</div>
-    </main>
-
-    <script src="app.js"></script>
-  </body>
+</body>
 </html>
