@@ -5,54 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cuentos Eternos</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ENCABEZADO -->
+  <!-- Header -->
   <header>
     <div class="logo">
-      <img src="nube.png" alt="Logo" width="50" />
-      <h1>Cuentos Eternos</h1>
+      <img src="assets/logo.png" alt="Logo" />
+      <span>CuentosEternos.com</span>
     </div>
     <nav>
       <a href="#">Inicio</a>
-      <a href="#oferta">Oferta</a>
+      <a href="#">Tienda</a>
+      <a href="#">Crear Cuento</a>
+      <a href="#">Biblioteca</a>
+      <button class="btn-primary">Mi Cuenta</button>
     </nav>
   </header>
 
-  <!-- HERO PRINCIPAL -->
+  <!-- Hero -->
   <section class="hero">
-    <h1>Convierte recuerdos en <span class="destacado">cuentos mágicos</span></h1>
+    <h1>Convierte recuerdos en <br><span class="highlight">cuentos mágicos</span></h1>
     <p>Crea historias personalizadas con ilustraciones únicas y audio narrado que serán tesoros para toda la vida.</p>
-    <div class="botones">
-      <a href="#formulario" class="btn-principal">Crear mi cuento ahora</a>
-      <a href="#tienda" class="btn-secundario">Explorar tienda</a>
+    <div class="hero-buttons">
+      <a class="cta" href="#">Crear mi cuento ahora</a>
+      <a class="explore" href="#">Explorar tienda</a>
     </div>
   </section>
 
-  <!-- SECCIÓN CARICATURA MÁGICA -->
-  <section class="oferta" id="oferta">
-    <div class="imagen">
-      <img src="assets/caricatura-magica.png" alt="Caricatura mágica" />
-    </div>
-    <div class="contenido">
-      <span class="etiqueta">Oferta Especial</span>
-      <h2>Caricatura mágica personalizada</h2>
-      <p>Convierte a tu pequeño en el protagonista de un mundo de fantasía con nuestra caricatura mágica. Creada con inteligencia artificial y perfeccionada por nuestros artistas.</p>
-      <div class="precio">
-        <span class="actual">$1</span>
-        <span class="antes">$5.99</span>
-        <span class="descuento">83% descuento</span>
-      </div>
-      <ul>
-        <li>✔ Entrega en 5 minutos</li>
-        <li>✔ Formato digital de alta resolución</li>
-        <li>✔ Personalización completa</li>
-      </ul>
-      <a href="#formulario" class="btn-principal">Crear caricatura mágica por $1</a>
-    </div>
-  </section>
+  <!-- Popup -->
+  <div class="popup">
+    <p class="oferta">Oferta especial</p>
+    <h2>¡Caricatura mágica por solo $1!</h2>
+    <p>Convierte a tu pequeño en el protagonista de un mundo de fantasía con nuestra caricatura personalizada.</p>
+    <img src="assets/ejemplo-caricatura.png" alt="Caricatura Mágica Ejemplo" />
+    <p class="price">$1 <span style="text-decoration:line-through; font-size: 1rem;">$5.99</span></p>
+    <p style="color:#FF927B;">Oferta válida por: <strong>24 horas</strong></p>
+    <button class="btn-popup">¡Quiero mi caricatura por $1!</button>
+    <p style="font-size: 0.8rem; color: #777; margin-top: 1rem;">No se requiere suscripción. Pago único.</p>
+  </div>
 
 </body>
 </html>
