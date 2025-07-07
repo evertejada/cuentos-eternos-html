@@ -5,109 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cuentos Eternos</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Segoe UI", sans-serif;
-        height: 100vh;
-        overflow: hidden;
-        background: linear-gradient(to top, #6d74f5, #b9c4fc);
-        position: relative;
-        color: white;
-        text-align: center;
-      }
-
-      .nube {
-        position: absolute;
-        background-image: url("assets/nube.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 200px;
-        height: 120px;
-        opacity: 0.5;
-        animation: mover 60s linear infinite;
-      }
-
-      @keyframes mover {
-        0% {
-          left: -250px;
-          top: 10%;
-        }
-        100% {
-          left: 110%;
-          top: 10%;
-        }
-      }
-
-      .container {
-        position: relative;
-        z-index: 2;
-        top: 40%;
-        transform: translateY(-50%);
-        padding: 0 20px;
-      }
-
-      h1 {
-        font-size: 3em;
-        margin-bottom: 0.5em;
-      }
-
-      p {
-        font-size: 1.3em;
-        max-width: 600px;
-        margin: 0 auto;
-      }
-
-      .btn {
-        background: #ffffff;
-        color: #6d74f5;
-        border: none;
-        padding: 12px 25px;
-        margin-top: 2em;
-        font-size: 1em;
-        border-radius: 30px;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-      }
-
-      .btn:hover {
-        background: #e2e6ff;
-        transform: scale(1.05);
-      }
-
-      /* Varias capas de nubes */
-      .nube:nth-child(1) {
-        top: 10%;
-        animation-delay: 0s;
-        animation-duration: 50s;
-      }
-      .nube:nth-child(2) {
-        top: 20%;
-        animation-delay: 10s;
-        animation-duration: 60s;
-      }
-      .nube:nth-child(3) {
-        top: 30%;
-        animation-delay: 20s;
-        animation-duration: 70s;
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Inter&display=swap" rel="stylesheet" />
   </head>
 
   <body>
-    <!-- Fondo animado con nubes -->
-    <div class="nube"></div>
-    <div class="nube"></div>
-    <div class="nube"></div>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo Cuentos Eternos" />
+        <span class="brand">CuentosEternos.com</span>
+      </div>
+      <nav class="menu">
+        <a href="#">Inicio</a>
+        <a href="#">Tienda</a>
+        <a href="#">Crear Cuento</a>
+        <a href="#">Biblioteca</a>
+      </nav>
+      <div class="controls">
+        <button id="toggleDarkMode">🌙</button>
+        <select id="lang">
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+        </select>
+        <button class="cta">Mi Cuenta</button>
+      </div>
+    </header>
 
-    <!-- Contenido principal -->
-    <div class="container">
-      <h1>Cuentos Eternos</h1>
-      <p>
-        Descubre historias mágicas personalizadas para tus hijos, con voces reales y aventuras que jamás olvidarán.
-      </p>
-      <button class="btn">Comienza tu historia</button>
-    </div>
+    <!-- NUBE ANIMADA -->
+    <img src="assets/nube.png" alt="Nube mágica" class="nube" />
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="hero">
+      <h1>Convierte recuerdos en<br /><span>cuentos mágicos</span></h1>
+      <p>Crea historias personalizadas con ilustraciones únicas y audio narrado que serán tesoros para toda la vida.</p>
+      <div class="botones">
+        <a href="#" class="btn coral">Crear mi cuento ahora</a>
+        <a href="#" class="btn morado">Explorar tienda</a>
+      </div>
+      <div class="scroll-down">↓</div>
+    </main>
+
+    <script src="app.js"></script>
   </body>
 </html>
