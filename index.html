@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cuentos Eternos</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- Nubes animadas -->
-  <div class="nube nube1"></div>
-  <div class="nube nube2"></div>
-  <div class="nube nube3"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuentos Eternos</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", sans-serif;
+        height: 100vh;
+        overflow: hidden;
+        background: linear-gradient(to top, #6d74f5, #b9c4fc);
+        position: relative;
+        color: white;
+        text-align: center;
+      }
 
-  <!-- Contenido principal -->
-  <div class="container">
-    <img src="assets/logo-cuentos-eternos.png" alt="Logo Cuentos Eternos" class="logo" />
-    <h1>Cuentos Eternos</h1>
-    <p>Inmortaliza la historia de tu familia en un cuento único,<br>con tu voz, tu historia y magia verdadera.</p>
-    <a href="#popup" class="btn">Crear mi cuento mágico</a>
-  </div>
-</body>
-</html>
+      .nube {
+        position: absolute;
+        background-image: url("assets/nube.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 200px;
+        height: 120px;
+        opacity: 0.5;
+        animation: mover 60s linear infinite;
+      }
+
+      @keyframes mover {
+        0% {
+          left: -250px;
+          top: 10%;
+        }
+        100% {
+          left: 110%;
+          top: 10%;
