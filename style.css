@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@700;800&family=Inter:wght@400;600&display=swap');
 
 body {
   margin: 0;
@@ -28,170 +28,147 @@ header {
   height: auto;
 }
 
-.logo h1 {
+.logo span {
   font-family: 'Alegreya', serif;
   font-size: 1.5rem;
+  font-weight: bold;
   color: #8E6BFF;
-  margin: 0;
 }
 
 nav a {
-  margin-left: 1rem;
-  color: #8E6BFF;
-  font-weight: bold;
+  margin-left: 1.5rem;
   text-decoration: none;
-  transition: 0.3s;
+  color: #8E6BFF;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #FF927B;
 }
 
-/* HERO PRINCIPAL */
+/* HERO */
 
 .hero {
-  min-height: 100vh;
-  padding: 4rem 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  padding: 6rem 2rem;
+  color: white;
 }
 
 .hero h1 {
   font-size: 2.5rem;
-  font-family: 'Alegreya', serif;
-  color: white;
-  margin-bottom: 1rem;
+  line-height: 1.4;
+  font-weight: 800;
 }
 
-.hero .destacado {
+.hero h1 span {
   color: #FF927B;
 }
 
 .hero p {
-  margin: 1rem 0;
+  margin-top: 1rem;
   font-size: 1.2rem;
-  color: white;
   max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(255, 255, 255, 0.9);
 }
 
-.botones {
+.hero .buttons {
+  margin-top: 2rem;
   display: flex;
   gap: 1rem;
-  margin-top: 1.5rem;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.btn-principal {
-  background: #FF927B;
-  color: white;
-  padding: 1rem 2rem;
+.hero .buttons a {
+  padding: 0.8rem 1.5rem;
   border-radius: 12px;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: background 0.3s;
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
-.btn-principal:hover {
-  background: #ff7a5f;
-}
-
-.btn-secundario {
-  background: rgba(255, 255, 255, 0.2);
+.hero .buttons a.primary {
+  background-color: #FF927B;
   color: white;
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
 }
 
-.btn-secundario:hover {
-  background: rgba(255, 255, 255, 0.3);
+.hero .buttons a.primary:hover {
+  background-color: #ffb29b;
 }
 
-/* OFERTA CARICATURA */
+.hero .buttons a.secondary {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+.hero .buttons a.secondary:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Oferta destacada */
 
 .oferta {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 3rem 2rem;
+  text-align: center;
+  padding: 4rem 2rem;
   background: white;
   color: #333;
-  align-items: center;
-}
-
-.oferta .imagen img {
-  width: 100%;
-  max-width: 350px;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.oferta .contenido {
-  max-width: 500px;
-  text-align: left;
 }
 
 .oferta h2 {
-  font-size: 2rem;
   font-family: 'Alegreya', serif;
-  margin: 1rem 0;
-  color: #333;
-}
-
-.oferta .etiqueta {
-  background: #E4DAFF;
-  color: #8E6BFF;
-  font-weight: bold;
-  padding: 0.3rem 0.8rem;
-  border-radius: 999px;
-  font-size: 0.9rem;
-  display: inline-block;
-}
-
-.oferta .precio {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin: 1rem 0;
-}
-
-.oferta .precio .actual {
-  font-size: 1.5rem;
-  color: #8E6BFF;
-  font-weight: bold;
-}
-
-.oferta .precio .antes {
-  text-decoration: line-through;
-  color: #aaa;
-  font-size: 0.9rem;
-}
-
-.oferta .precio .descuento {
-  color: #FF927B;
-  font-weight: bold;
-  font-size: 0.9rem;
-}
-
-.oferta ul {
-  list-style: none;
-  padding: 0;
+  font-size: 2rem;
   margin-bottom: 1rem;
+  color: #8E6BFF;
 }
 
-.oferta ul li {
-  margin-bottom: 0.5rem;
-  font-size: 0.95rem;
+.oferta p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #555;
 }
 
-.oferta a.btn-principal {
+.oferta img {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.oferta a {
   display: inline-block;
-  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #FF927B;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.oferta a:hover {
+  background-color: #ffb29b;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  nav a {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+  }
 }
