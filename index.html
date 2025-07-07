@@ -2,51 +2,119 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mi sitio estilo MagicLoops</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuentos Eternos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- ───────── HEADER ───────── -->
   <header class="header">
-    <div class="container">
-      <div class="logo">
-        <img src="assets/logo.png" alt="Logo" />
-        <span>CuentosEternos.com</span>
-      </div>
-      <nav class="nav">
-        <a href="#">Inicio</a>
-        <a href="#">Tienda</a>
-        <a href="#">Crear Cuento</a>
-        <a href="#">Biblioteca</a>
-      </nav>
-      <div class="actions">
-        <button class="btn icon-btn">🌙</button>
-        <select>
-          <option>ES</option>
-          <option>EN</option>
-        </select>
-        <button class="btn">Mi Cuenta</button>
-      </div>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo" />
+      <span>CuentosEternos.com</span>
+    </div>
+
+    <nav>
+      <a href="#hero">Inicio</a>
+      <a href="#oferta">Tienda</a>
+      <a href="#crear">Crear Cuento</a>
+      <a href="#testimonios">Biblioteca</a>
+    </nav>
+
+    <div class="acciones">
+      <button class="icono">🌙</button>
+      <select>
+        <option>ES</option><option>EN</option>
+      </select>
+      <button class="btn-primario">Mi Cuenta</button>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Convierte recuerdos en <span>cuentos mágicos</span></h1>
-      <p>Crea historias personalizadas con ilustraciones únicas y audio narrado...</p>
-      <div class="cta-buttons">
-        <a href="#crear" class="btn cta">Crear mi cuento ahora</a>
-        <a href="#tienda" class="btn cta secondary">Explorar tienda</a>
+  <!-- ───────── HERO ───────── -->
+  <section id="hero" class="hero">
+    <h1>Convierte recuerdos en <span>cuentos mágicos</span></h1>
+    <p>Crea historias personalizadas con ilustraciones únicas y audio narrado que serán tesoros para toda la vida.</p>
+    <div class="botones-cta">
+      <a href="#crear" class="btn cta">Crear mi cuento ahora</a>
+      <a href="#oferta" class="btn secundario">Explorar tienda</a>
+    </div>
+    <div class="flecha-abajo">⌄</div>
+  </section>
+
+  <!-- ───────── OFERTA ESPECIAL ───────── -->
+  <section id="oferta" class="oferta">
+    <div class="oferta-img">
+      <img src="assets/caricatura.png" alt="Caricatura mágica">
+    </div>
+
+    <div class="oferta-txt">
+      <span class="badge">Oferta Especial</span>
+      <h2>Caricatura mágica personalizada</h2>
+      <p>Convierte a tu pequeño en el protagonista de un mundo de fantasía con nuestra caricatura mágica. Creada con inteligencia artificial y perfeccionada por nuestros artistas.</p>
+
+      <div class="precio">
+        <span class="actual">$1</span>
+        <span class="tachado">$5.99</span>
+        <span class="descuento">83 % descuento</span>
       </div>
-      <div class="arrow-down">↓</div>
-    </section>
 
-    <!-- Bloque de Oferta -->
-    <section class="oferta">
-      <!-- Código HTML que tú compartiste -->
-    </section>
-  </main>
+      <ul class="beneficios">
+        <li>Entrega en 5 minutos</li>
+        <li>Formato digital de alta resolución</li>
+        <li>Personalización completa</li>
+      </ul>
 
-  <script src="script.js"></script>
+      <a href="#crear" class="btn-oferta">Crear caricatura mágica por $1</a>
+    </div>
+  </section>
+
+  <!-- ───────── BENEFICIOS ───────── -->
+  <section id="beneficios" class="beneficios-grid">
+    <article><h3>⬤ Rápido</h3><p>Recibe tu cuento o caricatura en minutos.</p></article>
+    <article><h3>⬤ Único</h3><p>Historias y dibujos irrepetibles creados para tu peque.</p></article>
+    <article><h3>⬤ Audio</h3><p>Narración profesional (o tu propia voz clonada).</p></article>
+    <article><h3>⬤ Imprimible</h3><p>PDF HQ listo para impresión o libro físico.</p></article>
+  </section>
+
+  <!-- ───────── TESTIMONIOS ───────── -->
+  <section id="testimonios" class="testimonios">
+    <h2>Lo que dicen las familias</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="assets/user1.jpg" alt="">
+        <h4>María González</h4>
+        <p>“Mi hija no suelta su cuento; el audio la hace soñar cada noche.”</p>
+      </div>
+      <div class="card">
+        <img src="assets/user2.jpg" alt="">
+        <h4>Carlos Rodríguez</h4>
+        <p>“Compré el combo y es nuestro momento favorito del día.”</p>
+      </div>
+      <div class="card">
+        <img src="assets/user3.jpg" alt="">
+        <h4>Laura Martínez</h4>
+        <p>“La caricatura quedó tan linda que la tenemos enmarcada.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── CTA FINAL ───────── -->
+  <section class="cta-final">
+    <h2>¿Listo para crear recuerdos mágicos?</h2>
+    <p>Empieza con una caricatura de $1 o un cuento completo.</p>
+    <a href="#crear" class="btn cta grande">Crear mi cuento ahora</a>
+  </section>
+
+  <!-- ───────── FOOTER ───────── -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="assets/logo.png" alt="">
+      <span>CuentosEternos.com</span>
+    </div>
+    <p>© 2025 Cuentos Eternos • Todos los derechos reservados</p>
+  </footer>
+
 </body>
 </html>
